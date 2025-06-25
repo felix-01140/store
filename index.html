@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Online Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="child.css" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="img/fav.jpg">
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffe0ef 0%, #f8bbd0 50%, #f06292 100%) !important;
+    }
+    .category-bar {
+      background: rgba(255, 240, 246, 0.85);
+      border-radius: 1rem;
+      box-shadow: 0 1px 8px 0 rgba(255, 192, 203, 0.08);
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      margin-bottom: 2rem;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    .category-btn {
+      border-radius: 9999px;
+      padding: 0.5rem 1.25rem;
+      font-weight: 600;
+      background: rgba(252, 228, 236, 0.85);
+      color: #c2185b;
+      border: 1px solid #f8bbd0;
+      transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s, transform 0.18s cubic-bezier(.4,2,.6,1);
+      box-shadow: 0 1px 4px 0 rgba(255, 192, 203, 0.10);
+    }
+    .category-btn.active, .category-btn:focus, .category-btn:hover {
+      background: #e91e63;
+      color: #fff;
+      border-color: #e91e63;
+      box-shadow: 0 4px 16px 0 rgba(233, 30, 99, 0.12);
+      transform: scale(1.04);
+    }
+    .section-heading {
+      color: #e91e63;
+    }
+    .add-to-basket {
+      background: linear-gradient(90deg, #f06292 0%, #e040fb 100%) !important;
+      color: #fff !important;
+      border-radius: 9999px !important;
+      box-shadow: 0 2px 12px 0 rgba(233, 30, 99, 0.18);
+      font-weight: bold;
+      border: none;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.18s cubic-bezier(.4,2,.6,1);
+    }
+    .add-to-basket:hover {
+      background: linear-gradient(90deg, #e040fb 0%, #f06292 100%) !important;
+      color: #fff !important;
+      box-shadow: 0 8px 24px 0 rgba(233, 30, 99, 0.22);
+      transform: scale(1.04);
+    }
+    .product-info {
+      background: rgba(255, 240, 246, 0.85);
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+    .product-title {
+      color: #ad1457;
+    }
+    .product-price {
+      color: #e91e63;
+    }
+    .shadow-lg, .shadow, .shadow-2xl {
+      box-shadow: 0 4px 24px 0 rgba(233, 30, 99, 0.10) !important;
+    }
+    .bg-blue-50, .bg-gray-100, .bg-gray-200 {
+      background: rgba(255, 240, 246, 0.85) !important;
+    }
+    .text-blue-800, .text-blue-700, .text-gray-700 {
+      color: #e91e63 !important;
+    }
+    .border-blue-700, .border-blue-800, .border-gray-200 {
+      border-color: #e91e63 !important;
+    }
+    /* Softer header and advert panels */
+    header.fixed, #left-ad-panel, #right-ad-panel {
+      background-color: rgba(236, 64, 122, 0.85) !important;
+      backdrop-filter: blur(8px);
+    }
+    .product-thumbnails {
+      gap: 0.25rem !important;
+      margin: 0.25rem 0 0.25rem 0 !important;
+    }
+    .product-thumbnail {
+      width: 28px !important;
+      height: 28px !important;
+      min-width: 28px !important;
+      min-height: 28px !important;
+      max-width: 28px !important;
+      max-height: 28px !important;
+      border-radius: 0.25rem;
+      object-fit: cover;
+      border: 2px solid #e5e7eb;
+      cursor: pointer;
+      transition: border 0.2s, transform 0.18s cubic-bezier(.4,2,.6,1);
+    }
+    .product-thumbnail.selected, .product-thumbnail:hover {
+      border: 2px solid #e91e63;
+      transform: scale(1.08);
+    }
+  </style>
+</head>
+<body class="bg-white min-h-screen flex flex-col relative overflow-x-hidden">
+  <!-- Left Ad Panel -->
+  <div id="left-ad-panel" class="fixed top-24 left-0 z-50 hidden lg:flex flex-col items-center bg-pink-500 text-white px-4 py-6 rounded-r-lg shadow-lg">
+    <button onclick="this.parentElement.style.display='none'" class="absolute top-2 right-2 text-white text-xl">&times;</button>
+    <div class="font-bold text-lg mb-2">Advertise here!</div>
+    <div class="mb-2">Call <a href="tel:07932617474" class="underline">07932617474</a></div>
+    <!-- ALELABS.TECH AD -->
+    <div class="mt-4 p-3 bg-white/20 rounded-lg text-left w-48 flex flex-col items-center">
+      <img src="ads/alwlab1.jpg" alt="Router and WiFi" class="w-24 h-16 object-contain mb-2 rounded shadow">
+      <div class="font-bold text-pink-100 mb-1">alelabs.tech</div>
+      <div class="text-sm text-pink-50 mb-2">IT Networking Solutions for Rwanda. Fast, reliable, and secure business networks.</div>
+      <a href="https://alelabs.tech" target="_blank" class="inline-block bg-pink-100 text-pink-700 font-bold px-3 py-1 rounded hover:bg-white transition">Visit alelabs.tech</a>
+    </div>
+  </div>
+  <!-- Right Ad Panel -->
+  <div id="right-ad-panel" class="fixed top-24 right-0 z-50 hidden lg:flex flex-col items-center bg-pink-500 text-white px-4 py-6 rounded-l-lg shadow-lg">
+    <button onclick="this.parentElement.style.display='none'" class="absolute top-2 left-2 text-white text-xl">&times;</button>
+    <div class="font-bold text-lg mb-2">Advertise here!</div>
+    <div class="mb-2">Call <a href="tel:07932617474" class="underline">07932617474</a></div>
+  </div>
+  <header class="fixed top-0 left-0 w-full bg-pink-500 text-white shadow-lg z-30 border-b border-pink-700 flex items-center justify-between px-4 py-3 font-semibold">
+    <div class="flex items-center gap-3 w-full justify-between">
+      <span class="flex-1 text-center text-base sm:text-lg">🚚 Fast delivery anywhere in Rwanda! Pay on delivery in Kigali. Welcome to Light Online Store.</span>
+      <a href="https://wa.me/250780000000" class="hidden sm:inline-flex items-center gap-1 text-pink-100 font-semibold hover:underline ml-4">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.52 3.48A12 12 0 003.48 20.52l-1.32 4.84a1 1 0 001.22 1.22l4.84-1.32A12 12 0 0020.52 3.48zm-8.52 17a10 10 0 1110-10 10 10 0 01-10 10zm4.29-7.71l-2.29-2.29a1 1 0 00-1.42 0l-2.29 2.29a1 1 0 001.42 1.42l1.29-1.3 1.29 1.3a1 1 0 001.42-1.42z"/></svg>
+        WhatsApp
+      </a>
+      <button id="cart-btn" class="relative ml-4">
+        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007.5 17h9a1 1 0 00.9-.55L21 13M7 13V6a1 1 0 011-1h5a1 1 0 011 1v7"/>
+        </svg>
+        <span id="cart-count" class="absolute -top-2 -right-2 bg-pink-600 text-white text-xs rounded-full px-1">0</span>
+      </button>
+    </div>
+  </header>
+  <main class="flex-1 p-4 max-w-6xl mx-auto w-full relative z-10" style="padding-top: 90px; padding-bottom: 90px;">
+    <h2 class="section-heading">Today's Deals</h2>
+    <div class="category-bar">
+      <button class="category-btn" data-category="All">All Products</button>
+      <button class="category-btn" data-category="Clothing">Clothing</button>
+      <button class="category-btn" data-category="Shoes">Shoes</button>
+    </div>
+    <div class="flex justify-center mb-4">
+      <input id="search-input" type="text" class="w-full max-w-xs px-3 py-2 rounded-full border-2 border-gray-300 focus:ring-2 focus:ring-blue-700 text-lg" placeholder="Search for clothing or shoes...">
+    </div>
+    <div id="products" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"></div>
+  </main>
+  <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded shadow-2xl w-11/12 max-w-md p-4 relative border border-gray-300">
+      <button id="close-cart" class="absolute top-2 right-2 text-gray-400 hover:text-black text-2xl">&times;</button>
+      <h2 class="text-2xl font-extrabold text-black mb-2 font-roboto">Your Basket</h2>
+      <div id="cart-items" class="mb-4 max-h-48 overflow-y-auto"></div>
+      <form id="checkout-form" class="space-y-2">
+        <input required name="name" class="w-full border-2 border-gray-300 rounded px-2 py-1 focus:ring-2 focus:ring-blue-700" placeholder="Your Name">
+        <input required name="phone" class="w-full border-2 border-gray-300 rounded px-2 py-1 focus:ring-2 focus:ring-blue-700" placeholder="Phone Number">
+        <input required name="location" class="w-full border-2 border-gray-300 rounded px-2 py-1 focus:ring-2 focus:ring-blue-700" placeholder="Delivery Location">
+        <textarea name="notes" class="w-full border-2 border-gray-300 rounded px-2 py-1 focus:ring-2 focus:ring-blue-700" placeholder="Notes (optional)"></textarea>
+        <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded font-bold flex items-center justify-center gap-2 shadow-lg text-lg transition transform hover:scale-105 font-roboto">
+          Order on WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+  <footer class="fixed bottom-0 left-0 w-full bg-gray-100/90 backdrop-blur-lg text-center text-gray-600 py-4 text-base font-semibold z-20 border-t border-gray-200">
+    <div class="mb-1">Light Online Store &mdash; Online Shopping</div>
+    <div class="text-gray-700">Call: <a href="tel:07932617474" class="underline">0793 261 7474</a> | WhatsApp: <a href="https://wa.me/2507932617474" class="underline">0793 261 7474</a></div>
+    <div class="text-gray-400 text-sm mt-1">Inspired by the best in online shopping. Not affiliated with Amazon.</div>
+  </footer>
+  <script src="products.js"></script>
+  <script src="store.js"></script>
+  <script>
+    // Slide in ad panels on desktop
+    function showAdPanels() {
+      if (window.innerWidth >= 1024) {
+        document.getElementById('left-ad-panel').classList.add('active');
+        document.getElementById('right-ad-panel').classList.add('active');
+      }
+    }
+    window.addEventListener('DOMContentLoaded', showAdPanels);
+    // Slide out on close
+    document.getElementById('left-ad-panel').querySelector('button').onclick = function() {
+      document.getElementById('left-ad-panel').classList.remove('active');
+    };
+    document.getElementById('right-ad-panel').querySelector('button').onclick = function() {
+      document.getElementById('right-ad-panel').classList.remove('active');
+    };
+  </script>
+</body>
+</html> 
