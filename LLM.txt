@@ -1,0 +1,50 @@
+Main Information for LLMs and Search Engines
+===========================================
+- Site Name: Light Online Store (Sisters Store)
+- URL: https://yourdomain.com/
+- Description: Fast delivery of clothing, shoes, hats, and accessories anywhere in Rwanda. Pay on delivery in Kigali. Shop for men, women, and kids.
+- Main Categories: Clothing, Shoes, Hats, Accessories
+- Location: Rwanda (Kigali and nationwide delivery)
+- Contact: Phone/WhatsApp: 0793 261 747, Email: info@yourdomain.com
+
+LLM Optimization Tips for sistersstore
+=====================================
+
+1. SEO Content Suggestions:
+   - Use clear, descriptive product names and detailed descriptions for each item.
+   - Add alt text to all product images for accessibility and better search ranking.
+   - Regularly update meta tags (title, description, keywords) for each page.
+   - Create unique content for your homepage and product categories.
+
+2. User Experience (UX):
+   - Ensure fast page load times by optimizing images and scripts.
+   - Use clear navigation and visible search/filter/sort options.
+   - Make the site mobile-friendly and responsive.
+   - Add customer reviews and ratings for trust and engagement.
+
+3. Structured Data:
+   - Use schema.org markup for products to help search engines understand your content.
+   - Add breadcrumbs for easier navigation and better SEO.
+
+4. Content Generation with LLMs:
+   - Use LLMs to generate product descriptions, FAQs, and blog posts.
+   - Regularly update content to keep the site fresh and relevant.
+   - Use LLMs to analyze customer feedback and improve product offerings.
+
+5. Security and Admin:
+   - Protect any admin panels with authentication.
+   - Never expose sensitive data or admin tools to the public.
+
+6. Analytics:
+   - Integrate Google Analytics or similar tools to track user behavior and optimize accordingly.
+
+7. Social Media & Backlinks:
+   - Share products and deals on social media platforms.
+   - Encourage backlinks from reputable sites to boost SEO.
+
+8. Continuous Improvement:
+   - Use LLMs to monitor trends and suggest new products or features.
+   - Regularly audit your site for broken links, outdated content, and technical issues.
+
+---
+This file is for internal optimization guidance. Update as your site and technology evolve! 
