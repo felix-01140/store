@@ -1,5 +1,5 @@
 // WhatsApp number for orders (change as needed)
-const WHATSAPP_NUMBER = '2507932617474'; // Example: 2507932617474 (no + or spaces)
+const WHATSAPP_NUMBER = '250793261747'; // Example: 2507932617474 (no + or spaces)
 
 const products = window.PRODUCTS;
 let currentCategory = 'All';

@@ -1,126 +1,27 @@
 // Product data for Sisters Store
 // To add/edit products, modify the array below
 window.PRODUCTS = [
-  {
-    id: 1,
-    name: "Classic White Shirt",
-    price: 12000,
-    image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80"
-    ],
-    category: "Clothing"
-  },
-  {
-    id: 2,
-    name: "Blue Jeans",
-    price: 18000,
-    image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80"
-    ],
-    category: "Clothing"
-  },
-  {
-    id: 3,
-    name: "Black Sneakers",
-    price: 25000,
-    image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80"
-    ],
-    category: "Shoes"
-  },
-  {
-    id: 4,
-    name: "Red Dress",
-    price: 22000,
-    image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80"
-    ],
-    category: "Clothing"
-  },
-  {
-    id: 5,
-    name: "Brown Leather Shoes",
-    price: 27000,
-    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
-    ],
-    category: "Shoes"
-  },
-  {
-    id: 6,
-    name: "Grey Hoodie",
-    price: 16000,
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80"
-    ],
-    category: "Clothing"
-  },
-  {
-    id: 7,
-    name: "White Sandals",
-    price: 14000,
-    image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80"
-    ],
-    category: "Shoes"
-  },
-  {
-    id: 8,
-    name: "Green T-Shirt",
-    price: 10000,
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80"
-    ],
-    category: "Clothing"
-  },
-  {
-    id: 9,
-    name: "Black Boots",
-    price: 30000,
-    image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80"
-    ],
-    category: "Shoes"
-  },
-  {
-    id: 10,
-    name: "Yellow Polo Shirt",
-    price: 13000,
-    image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80"
-    ],
-    category: "Clothing"
-  }
-]; 
+  { id: 1, name: "Babies Hats", price: 7500, image: "products/Babies Hats.jpg", images: ["products/Babies Hats.jpg"], category: "Clothing" },
+  { id: 2, name: "Boys open shoes", price: 6500, image: "products/Boys open shoes.jpg", images: ["products/Boys open shoes.jpg"], category: "Shoes" },
+  { id: 3, name: "closed easy shoes", price: 9500, image: "products/closed easy shoes.jpg", images: ["products/closed easy shoes.jpg"], category: "Shoes" },
+  { id: 4, name: "Closed shoes warriors", price: 11000, image: "products/Closed shoes warriors.jpg", images: ["products/Closed shoes warriors.jpg"], category: "Shoes" },
+  { id: 5, name: "closed shoes", price: 9500, image: "products/closed shoes.jpg", images: ["products/closed shoes.jpg"], category: "Shoes" },
+  { id: 6, name: "cotton shorts", price: 8000, image: "products/cotton shorts.jpg", images: ["products/cotton shorts.jpg"], category: "Clothing" },
+  { id: 7, name: "Fashion slippers", price: 8000, image: "products/Fashion slippers.jpg", images: ["products/Fashion slippers.jpg"], category: "Shoes" },
+  { id: 8, name: "feiyue closed shoes", price: 9500, image: "products/feiyue closed shoes.jpg", images: ["products/feiyue closed shoes.jpg"], category: "Shoes" },
+  { id: 9, name: "Hats", price: 5000, image: "products/Hats.jpg", images: ["products/Hats.jpg"], category: "Clothing" },
+  { id: 10, name: "Hoodie", price: 13000, image: "products/Hoodie.jpg", images: ["products/Hoodie.jpg"], category: "Clothing" },
+  { id: 11, name: "Indoors Open", price: 6500, image: "products/Indoors Open.jpg", images: ["products/Indoors Open.jpg"], category: "Shoes" },
+  { id: 14, name: "Kids open shoes", price: 10000, image: "products/Kids open hoes.jpg", images: ["products/Kids open hoes.jpg"], category: "Shoes" },
+  { id: 15, name: "kids Open", price: 10000, image: "products/kids Open.jpg", images: ["products/kids Open.jpg"], category: "Shoes" },
+  { id: 16, name: "Large hats", price: 36000, image: "products/Large hats .jpg", images: ["products/Large hats .jpg"], category: "Clothing" },
+  { id: 17, name: "long jacket", price: 30000, image: "products/long jacket.jpg", images: ["products/long jacket.jpg"], category: "Clothing" },
+  { id: 18, name: "long sleeve shirt", price: 12000, image: "products/long sleeve shirt.jpg", images: ["products/long sleeve shirt.jpg"], category: "Clothing" },
+  { id: 19, name: "men hats", price: 6500, image: "products/men hats.jpg", images: ["products/men hats.jpg"], category: "Clothing" },
+  { id: 21, name: "miami shorts", price: 7000, image: "products/miami shorts.jpg", images: ["products/miami shorts.jpg"], category: "Clothing" },
+  { id: 22, name: "Open shoes", price: 7000, image: "products/Open shoes.jpg", images: ["products/Open shoes.jpg"], category: "Shoes" },
+  { id: 23, name: "sun hats", price: 7000, image: "products/sun hats .jpg", images: ["products/sun hats .jpg"], category: "Clothing" },
+  { id: 24, name: "Ties", price: 5000, image: "products/Ties.jpg", images: ["products/Ties.jpg"], category: "Clothing" },
+  { id: 25, name: "Tops", price: 14000, image: "products/tops.jpg", images: ["products/tops.jpg"], category: "Clothing" }
+  
+];
