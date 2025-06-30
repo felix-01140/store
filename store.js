@@ -5,6 +5,7 @@ const products = window.PRODUCTS;
 let currentCategory = 'All';
 let cart = [];
 let searchTerm = '';
+let sortOption = 'default';
 
 const productsDiv = document.getElementById('products');
 const cartBtn = document.getElementById('cart-btn');
@@ -15,6 +16,7 @@ const cartCount = document.getElementById('cart-count');
 const categoryBtns = document.querySelectorAll('.category-btn');
 const checkoutForm = document.getElementById('checkout-form');
 const searchInput = document.getElementById('search-input');
+const sortSelect = document.getElementById('sort-select');
 
 function renderProducts() {
   productsDiv.innerHTML = '';
@@ -24,6 +26,16 @@ function renderProducts() {
   }
   if (searchTerm) {
     filtered = filtered.filter(p => p.name.toLowerCase().includes(searchTerm));
+  }
+  // Sort logic
+  if (sortOption === 'price-asc') {
+    filtered = filtered.slice().sort((a, b) => a.price - b.price);
+  } else if (sortOption === 'price-desc') {
+    filtered = filtered.slice().sort((a, b) => b.price - a.price);
+  } else if (sortOption === 'az') {
+    filtered = filtered.slice().sort((a, b) => a.name.localeCompare(b.name));
+  } else if (sortOption === 'za') {
+    filtered = filtered.slice().sort((a, b) => b.name.localeCompare(a.name));
   }
   if (filtered.length === 0) {
     productsDiv.innerHTML = '<div class="col-span-full text-center text-gray-500 text-lg">No products found. Try another search.</div>';
@@ -184,6 +196,13 @@ checkoutForm.addEventListener('submit', function(e) {
 if (searchInput) {
   searchInput.addEventListener('input', function() {
     searchTerm = this.value.trim().toLowerCase();
+    renderProducts();
+  });
+}
+
+if (sortSelect) {
+  sortSelect.addEventListener('change', function() {
+    sortOption = this.value;
     renderProducts();
   });
 }

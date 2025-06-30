@@ -22,6 +22,7 @@ window.PRODUCTS = [
   { id: 22, name: "Open shoes", price: 7000, image: "products/Open shoes.jpg", images: ["products/Open shoes.jpg"], category: "Shoes" },
   { id: 23, name: "sun hats", price: 7000, image: "products/sun hats .jpg", images: ["products/sun hats .jpg"], category: "Clothing" },
   { id: 24, name: "Ties", price: 5000, image: "products/Ties.jpg", images: ["products/Ties.jpg"], category: "Clothing" },
-  { id: 25, name: "Tops", price: 14000, image: "products/tops.jpg", images: ["products/tops.jpg"], category: "Clothing" }
+  { id: 25, name: "Tops", price: 14000, image: "products/tops.jpg", images: ["products/tops.jpg"], category: "Clothing" },
+  { id: 26, name: "converse shoes", price: 11000, image: "products/converseshoes.jpg", images: ["products/converseshoes.jpg"], category: "Shoes" }
   
 ];
