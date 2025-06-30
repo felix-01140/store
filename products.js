@@ -23,6 +23,10 @@ window.PRODUCTS = [
   { id: 23, name: "sun hats", price: 7000, image: "products/sun hats .jpg", images: ["products/sun hats .jpg"], category: "Clothing" },
   { id: 24, name: "Ties", price: 5000, image: "products/Ties.jpg", images: ["products/Ties.jpg"], category: "Clothing" },
   { id: 25, name: "Tops", price: 14000, image: "products/tops.jpg", images: ["products/tops.jpg"], category: "Clothing" },
-  { id: 26, name: "converse shoes", price: 11000, image: "products/converseshoes.jpg", images: ["products/converseshoes.jpg"], category: "Shoes" }
+  { id: 26, name: "converse shoes", price: 11000, image: "products/converseshoes.jpg", images: ["products/converseshoes.jpg"], category: "Shoes" },
+  { id: 27, name: "cotton sweater", price: 15500, image: "products/cottonsweater.jpg", images: ["products/cottonsweater.jpg"], category: "Clothing" },
+  { id: 28, name: "Men shoes", price: 17000, image: "products/menshoes.jpg", images: ["products/menshoes.jpg"], category: "Shoes" },
+  { id: 29, name: "Sports Shoes for men & women", price: 25000, image: "products/shoesformen.jpg", images: ["products/shoesformen.jpg"], category: "Shoes" },
+  { id: 30, name: "Sports shoes", price: 19000, image: "products/sportsshoes.jpg", images: ["products/sportsshoes.jpg"], category: "Shoes" }
   
 ];
