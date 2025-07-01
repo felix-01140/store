@@ -181,7 +181,7 @@ checkoutForm.addEventListener('submit', function(e) {
   const phone = data.get('phone');
   const location = data.get('location');
   const notes = data.get('notes');
-  let message = `Order from Sisters Store%0A`;
+  let message = `Order from Light Online Store%0A`;
   message += `Name: ${name}%0APhone: ${phone}%0ALocation: ${location}%0A`;
   if (notes) message += `Notes: ${notes}%0A`;
   message += `%0AItems:%0A`;
