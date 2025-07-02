@@ -28,6 +28,6 @@ window.PRODUCTS = [
   { id: 28, name: "Men shoes", price: 17000, image: "products/menshoes.jpg", images: ["products/menshoes.jpg"], category: "Shoes" },
   { id: 29, name: "Sports Shoes for men & women", price: 25000, image: "products/shoesformen.jpg", images: ["products/shoesformen.jpg"], category: "Shoes" },
   { id: 30, name: "Sports shoes", price: 19000, image: "products/sportsshoes.jpg", images: ["products/sportsshoes.jpg"], category: "Shoes" },
-  { id: 31, name: "Boots ", price: 8000, image: "products/boots.jpg", images: ["products/boots.jpg"], category: "Shoes" }
+  { id: 31, name: "Boots ", price: 8000, image: "products/Boots.jpg", images: ["products/Boots.jpg"], category: "Shoes" }
   
 ];
